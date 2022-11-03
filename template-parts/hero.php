@@ -19,7 +19,7 @@
 		<div class="hero__content hero-content">
 			<header class="hero__header hero-header">
 				<span class="hero-header__subtitle">Team Culture</span>
-				<h1 class="hero-header__title">Join Our Amazing Team</h1>
+				<h1 class="hero-header__title">Join Our<br> Amazing Team</h1>
 			</header>
 			<p class="hero-content__text">Our goal is to provide the industry with the highest quality welding and fabrication support. We support our goal with our team of highly qualified welding engineers utilizing premier welding equipment</p>
 			<a href="#" class="hero-content__button">View All Open Positions</a>
