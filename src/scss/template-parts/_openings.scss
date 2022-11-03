@@ -73,10 +73,10 @@
 		}
 
 		&__number {
-			@extend %text-decoration__number--dark;
+			@extend %text-decoration__number--light;
 
 			@include media('>phone') {
-				@extend %text-decoration__number--light;
+				color: $color-slate;
 			}
 		}
 	}
