@@ -196,6 +196,11 @@
 			&::before {
 				@extend %image__color-burn--left;
 
+				@include media('>tablet') {
+					left: auto;
+					right: 0;
+				}
+
 				z-index: 3;
 			}
 		}
