@@ -1,0 +1,4 @@
+name: blacksmith-test
+recipe: lamp
+config:
+  webroot: .
