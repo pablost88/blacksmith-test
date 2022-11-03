@@ -5,6 +5,17 @@
 
 	@include media('>phone') {
 		padding-bottom: 0;
+
+		&::after {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: 8%;
+			height: 100%;
+			background-color: $color-licorice;
+		}
 	}
 
 	&__wrapper {
@@ -54,15 +65,19 @@
 		}
 
 		&__label {
-			@extend %text-decoration__label--light;
+			@extend %text-decoration__label--dark;
 
 			&-inner {
-				@extend %text-decoration__label-inner--light;
+				@extend %text-decoration__label-inner--dark;
 			}
 		}
 
 		&__number {
-			@extend %text-decoration__number--light;
+			@extend %text-decoration__number--dark;
+
+			@include media('>phone') {
+				@extend %text-decoration__number--light;
+			}
 		}
 	}
 
