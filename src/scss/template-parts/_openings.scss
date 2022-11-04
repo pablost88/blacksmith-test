@@ -15,6 +15,10 @@
 			width: 8%;
 			height: 100%;
 			background-color: $color-licorice;
+
+			@include media('>desktop-medium') {
+				width: 8%;
+			}
 		}
 	}
 
@@ -62,6 +66,10 @@
 
 		@include media('>phone') {
 			top: 28%;
+		}
+
+		@include media('>desktop-xlarge') {
+			left: -12rem;
 		}
 
 		&__label {
