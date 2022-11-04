@@ -15,7 +15,7 @@
                 <nav id="navigation-menu" class="navigation__menu navigation-menu">
                 	<ul class="navigation-menu__list">
                 		<li class="navigation-menu__item navigation-menu__item--has-submenu">
-                			<a href="#" class="navigation-menu__link">
+                			<a href="#about" class="navigation-menu__link">
                 				<span class="navigation-menu__indicator">01</span>
                 				<span class="navigation-menu__label">Services</span>
                 			</a>
@@ -63,19 +63,19 @@
                 			</ul>
                 		</li>
                 		<li class="navigation-menu__item">
-                			<a href="#" class="navigation-menu__link">
+                			<a href="#testimonials" class="navigation-menu__link">
                 				<span class="navigation-menu__indicator">02</span>
                 				<span class="navigation-menu__label">Experience</span>
                 			</a>
                 		</li>
                 		<li class="navigation-menu__item">
-                			<a href="#" class="navigation-menu__link">
+                			<a href="#culture" class="navigation-menu__link">
                 				<span class="navigation-menu__indicator">03</span>
                 				<span class="navigation-menu__label">Company</span>
                 			</a>
                 		</li>
                 		<li class="navigation-menu__item">
-                			<a href="#" class="navigation-menu__link">
+                			<a href="#openings" class="navigation-menu__link">
                 				<span class="navigation-menu__indicator">04</span>
                 				<span class="navigation-menu__label">Careers</span>
                 			</a>
