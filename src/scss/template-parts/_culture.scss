@@ -1,6 +1,5 @@
 .culture {
 	@extend %content__area--dark;
-	@extend %site-wrapper;
 
 	position: relative;
 	padding: rem-calc(40) rem-calc(14) rem-calc(80);
@@ -11,6 +10,34 @@
 
 	@include media('>tablet') {
 		padding: rem-calc(100);
+	}
+
+	&__wrapper {
+		@extend %site-wrapper;
+
+		position: relative;
+		padding-top: rem-calc(60);
+		padding-bottom: rem-calc(74);
+
+		@include media('>tablet') {
+			padding: rem-calc(70) rem-calc(60) rem-calc(120);
+		}
+
+		@include media('>desktop-small') {
+			padding: rem-calc(90) rem-calc(80) rem-calc(160);
+		}
+
+		@include media('>desktop-medium') {
+			padding: rem-calc(110) rem-calc(100) rem-calc(200);
+		}
+
+		@include media('>desktop-large') {
+			padding: rem-calc(130) rem-calc(120) rem-calc(230);
+		}
+
+		@include media('>desktop-xlarge') {
+			padding: rem-calc(150) rem-calc(146) rem-calc(250);
+		}
 	}
 
 	&-decoration {
@@ -251,7 +278,8 @@
 		}
 
 		@include media('>desktop-xlarge') {
-			width: 33%;
+			padding: 10rem;
+			width: 50%;
 		}
 
 		&__text {
