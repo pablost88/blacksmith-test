@@ -3,7 +3,6 @@
 	const mobileNavTrigger = document.getElementById('navigation-header-mobile-toggle');
 	const mobileNavTriggerTitle = document.getElementById('navigation-header-mobile-toggle-title');
 	const submenuToggleButtons = document.querySelectorAll('.navigation-menu__submenu-toggle');
-	const mainNavLnk = document.querySelectorAll('.navigation-menu__link');
     let mobileMenuOpen = false;
 
     // Mobile Menu Toggle Active
@@ -64,6 +63,9 @@
 			el.preventDefault();
 			const hrefTarget = (el.target.matches('.navigation-menu__link') ? el.target.getAttribute('href') : el.target.parentElement.getAttribute('href') );
 			const targetSection = document.querySelector(hrefTarget);
+
+			if(mobileMenuOpen) toggleMobileActive();
+
 			targetSection.scrollIntoView({behavior: 'smooth', block: 'nearest'});
 			history.pushState(null, null, hrefTarget);
 		}
