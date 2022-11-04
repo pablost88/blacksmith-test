@@ -1,2 +1,288 @@
 .culture {
+	@extend %content__area--dark;
+	@extend %site-wrapper;
+
+	position: relative;
+	padding: rem-calc(40) rem-calc(14) rem-calc(80);
+
+	@include media('>phone-small') {
+		padding: rem-calc(35) rem-calc(60) rem-calc(80);
+	}
+
+	@include media('>tablet') {
+		padding: rem-calc(100);
+	}
+
+	&-decoration {
+		@extend %text-decoration--right;
+
+		z-index: 2;
+		top: 58%;
+
+		&__label {
+			@extend %text-decoration__label--dark;
+
+			&-inner {
+				@extend %text-decoration__label-inner--dark;
+			}
+		}
+
+		&__number {
+			@extend %text-decoration__number--dark;
+
+			@include media('<=phone') {
+				color: $color-slate;
+			}
+		}
+	}
+
+	&__media {
+		position: relative;
+		bottom: -3rem;
+		right: -0.875rem;
+		margin-right: auto;
+		max-width: 355px;
+		z-index: 3;
+
+		@include media('>tablet') {
+			margin-left: 0;
+			margin-bottom: 0;
+			position: static;
+			max-width: none;
+			z-index: 2;
+		}
+
+		&-main {
+			position: relative;
+			z-index: 3;
+			left: -8px;
+			width: 90%;
+			margin-left: auto;
+
+			@include media('>tablet') {
+				position: absolute;
+				bottom: 5rem;
+				left: 6.5rem;
+				margin-right: auto;
+				width: 40%;
+			}
+
+			&::before,
+			&::after {
+				@extend %dots-pattern;
+
+				z-index: 1;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: -7%;
+				left: -5%;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				background-color: $color-orange;
+
+				@include media('>tablet') {
+					bottom: 0;
+					top: auto;
+					width: 120%;
+					height: 150%;
+					max-height: 455px;
+					left: 50%;
+				}
+			}
+		}
+	}
+
+	&__picture {
+		@extend %site-picture;
+
+		&-main {
+			@include ratio(347, 528);
+
+			position: relative;
+			z-index: 2;
+
+			&::before {
+				@extend %image__color-burn--left;
+				left: 0;
+				display: none;
+
+				@include media('>tablet') {
+					display: block;
+				}
+
+				z-index: 3;
+			}
+
+			&::after {
+				padding-top: 70%;
+			}
+		}
+
+		&-top,
+		&-side {
+			@include ratio(179, 179);
+			position: absolute;
+			z-index: 5;
+		}
+
+		&-top {
+			top: -30%;
+			left: 1rem;
+			left: -2rem;
+    		width: 30%;
+
+			@include media('>tablet') {
+				left: 12rem;
+				right: auto;
+				top: 5rem;
+				max-height: 100px;
+				width: 15%;
+			}
+
+			&::before {
+				@extend %dots-pattern;
+
+				display: none;
+
+				@include media('>phone-small') {
+					display: block;
+					top: -19%;
+					left: 17%;
+					z-index: 1;
+					width: 63%;
+					height: 20%;
+				}
+			}
+		}
+
+		&-side {
+			display: none;
+			z-index: 2;
+
+			@include media('>tablet') {
+				display: block;
+				width: 15%;
+				top: 2rem;
+				right: .5rem;
+			}
+		}
+	}
+
+	&__image {
+		@extend %image__cover;
+
+		z-index: 2;
+	}
+
+	&-header {
+		margin-bottom: rem-calc(18);
+
+		@include media('>tablet') {
+			margin-bottom: rem-calc(20);
+		}
+
+		@include media('>desktop-small') {
+			margin-bottom: rem-calc(22);
+		}
+
+		@include media('>desktop-medium') {
+			margin-bottom: rem-calc(24);
+		}
+
+		@include media('>desktop-large') {
+			margin-bottom: rem-calc(26);
+		}
+
+		&__subtitle {
+			@extend %header__subtitle--light;
+
+			margin-bottom: rem-calc(15);
+
+			@include media('>desktop-small') {
+				margin-bottom: rem-calc(18);
+			}
+
+			@include media('>desktop-medium') {
+				margin-bottom: rem-calc(20);
+			}
+
+			@include media('>desktop-large') {
+				margin-bottom: rem-calc(24);
+			}
+		}
+
+		&__title {
+			@extend %header__title--light;
+		}
+	}
+	&-content {
+		background-color: $color-slate;
+		position: relative;
+		left: -0.875rem;
+		z-index: 2;
+		padding: rem-calc(150) rem-calc(50) rem-calc(80);
+
+		@include media('>tablet') {
+			width: 50%;
+			margin-bottom: rem-calc(20);
+			margin-left: auto;
+			padding: rem-calc(80);
+			z-index: 3;
+		}
+
+		@include media('>desktop-small') {
+			width: 42%;
+			margin-bottom: rem-calc(22);
+			margin-right: 5rem;
+		}
+
+		@include media('>desktop-medium') {
+			width: 38%;
+			margin-bottom: rem-calc(26);
+		}
+
+		@include media('>desktop-large') {
+			width: 37%;
+			margin-bottom: rem-calc(30);
+		}
+
+		@include media('>desktop-xlarge') {
+			width: 33%;
+		}
+
+		&__text {
+			width: 87%;
+			margin-bottom: rem-calc(36);
+
+			@include media('>tablet') {
+				margin-bottom: rem-calc(40);
+			}
+
+			@include media('>desktop-small') {
+				margin-bottom: rem-calc(50);
+			}
+
+			@include media('>desktop-medium') {
+				width: 100%;
+				margin-bottom: rem-calc(60);
+			}
+
+			@include media('>desktop-large') {
+				margin-bottom: rem-calc(70);
+			}
+		}
+
+		&__button {
+			@extend %site-button;
+
+			@include media('<400px') {
+				padding-left: rem-calc(12);
+				padding-right: rem-calc(46);
+			}
+		}
+	}
 }
