@@ -119,6 +119,11 @@
 					max-height: 455px;
 					left: 50%;
 				}
+
+				@include media('>desktop-xlarge') {
+					max-height: none;
+					height: 120%;
+				}
 			}
 		}
 	}
@@ -168,6 +173,11 @@
 				top: 5rem;
 				max-height: 100px;
 				width: 15%;
+			}
+
+			@include media('>desktop-xlarge') {
+				left: 15rem;
+				max-height: 200px;
 			}
 
 			&::before {
