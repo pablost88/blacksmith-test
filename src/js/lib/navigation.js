@@ -8,6 +8,7 @@
     // Mobile Menu Toggle Active
     function toggleMobileActive () {
 	    siteNavigation.classList.toggle('navigation--mobile-active');
+		mobileMenuOpen = !mobileMenuOpen;
 		mobileNavTriggerTitle.innerHTML = mobileMenuOpen ? 'Close' : 'Menu';
 	}
 
