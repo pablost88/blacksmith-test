@@ -831,6 +831,10 @@
 		font-size: rem-calc(14);
 		font-weight: 500;
 		letter-spacing: 0.17px;
+
+		@include media('>phone-small') {
+			display: none;
+		}
 	}
 
 	&__label {
