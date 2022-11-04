@@ -299,6 +299,11 @@
 
 
 	&__list {
+		@include media('>phone') {
+			display: flex;
+			justify-content: space-between
+		}
+		
 		&-item {
 			@extend %arrow-block-button;
 
