@@ -243,6 +243,7 @@
 			margin: rem-calc(15) 7px;
 			text-align: center;
 			padding: rem-calc(47) rem-calc(15) rem-calc(25);
+			background-color: $color-white;
 
 			@include media('>499px') {
 				padding-left: rem-calc(60);
